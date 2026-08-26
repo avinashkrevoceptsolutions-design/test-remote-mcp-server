@@ -1,0 +1,49 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Food",
+      "description": "Restaurants, groceries, snacks, and meals"
+    },
+    {
+      "id": 2,
+      "name": "Transport",
+      "description": "Fuel, taxis, public transport, and parking"
+    },
+    {
+      "id": 3,
+      "name": "Shopping",
+      "description": "Clothes, electronics, and other purchases"
+    },
+    {
+      "id": 4,
+      "name": "Bills",
+      "description": "Electricity, water, internet, phone, and other bills"
+    },
+    {
+      "id": 5,
+      "name": "Entertainment",
+      "description": "Movies, games, subscriptions, and activities"
+    },
+    {
+      "id": 6,
+      "name": "Health",
+      "description": "Medicine, doctor visits, and healthcare"
+    },
+    {
+      "id": 7,
+      "name": "Travel",
+      "description": "Hotels, flights, and travel expenses"
+    },
+    {
+      "id": 8,
+      "name": "Education",
+      "description": "Courses, books, and educational expenses"
+    },
+    {
+      "id": 9,
+      "name": "Other",
+      "description": "Expenses that don't fit another category"
+    }
+  ]
+}
