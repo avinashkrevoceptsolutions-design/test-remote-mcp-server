@@ -642,7 +642,8 @@ import aiosqlite  # Changed: sqlite3 → aiosqlite
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-DB_PATH = BASE_DIR / "expenses.db"
+DB_PATH = Path(os.getenv("EXPENSES_DB_PATH", str(BASE_DIR / "expenses.db"))).expanduser()
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
 print(f"Database path: {DB_PATH}")
@@ -766,5 +767,5 @@ def categories():
 
 # Start the server
 if __name__ == "__main__":
-    mcp.run(transport="http", host="0.0.0.0", port=8000)
+    mcp.run(transport="http", host="0.0.0.0", port=8001)
     # mcp.run()
